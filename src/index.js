@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+import ProductTable from './ProductTable';
 
+const array =[
+  {name : 'hp 24f display',price:'460',category: 'Electronics'},
+  {name : 'PC Portable HP ',price:'699',category: 'Electronics'},
+  {name : 'Boardshort' ,price:'15',category: 'Clothes'},
+  {name : 'Tee-Shirt ',price:'39',category: 'Clothes'}
+]
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  
+    <ProductTable prtable={array} />,
+  
   document.getElementById('root')
 );
 
